@@ -1,1 +1,23 @@
-.Camera {}
+.Camera {
+    position: relative;
+    height: 100%;
+}
+
+.Camera video {
+    background: #000000;
+}
+
+.MainCamera {
+    height: 100%;
+}
+
+.SecondaryCamera {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.CameraMenu {
+    position: absolute;
+    bottom: 100px;
+}
