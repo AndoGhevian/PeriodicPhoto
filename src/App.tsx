@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react'
 import { useImmer } from 'use-immer'
 import fscreen from 'fscreen'
-import Camera from './components/Camera';
-import './App.css';
+import { CameraProvider } from './context/camera.context'
+import Camera from './components/Camera/Camera'
+import './App.css'
 
 function App() {
   const [state, updateState] = useImmer({
@@ -75,10 +76,12 @@ function App() {
           )}
         </>
       ) : (
-        <Camera />
+        <CameraProvider>
+          <Camera />
+        </CameraProvider>
       )}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
