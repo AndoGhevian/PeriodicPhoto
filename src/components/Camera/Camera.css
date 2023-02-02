@@ -1,0 +1,71 @@
+.Camera {
+  position: relative;
+  height: 100vh;
+}
+
+.Camera video {
+  /* background: #000000; */
+}
+
+.MainCameraContainer {
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+.MainCamera {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.CameraMenu {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30%;
+  background-color: #000000;
+  color: #FFFFFF
+}
+
+.CameraControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+}
+
+.CameraControlCircle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.PhotoShot.CameraControlCircle {
+  border: 6px solid #FFFFFF;
+}
+
+.Gallery.CameraControlCircle {
+  background-color: red;
+}
+
+.Gallery canvas {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.SwitchCamera.CameraControlCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #676767;
+}
+
+.circular-arrows {
+  width: 30px;
+  height: 30px;
+  fill: #FFFFFF;
+}
